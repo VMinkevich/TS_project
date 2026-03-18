@@ -80,22 +80,30 @@
 TS_project/
 ├─ src/
 │  ├─ data/
-│  │  ├─ load_data.py           # загрузка и сохранение данных
-│  │  ├─ preprocess.py          # предобработка
-│  │  └─ volatility_regimes.py  # определение high/low volatility
+│  │  ├─ load_data.py          # загрузка и сохранение данных
+│  │  ├─ preprocess.py         # предобработка
+│  │  └─ volatility_regimes.py # определение high/low volatility
+│  │
 │  ├─ models/
-│  │  ├─ naive_model.py         # наивная модель
-│  │  ├─ garch_model.py         # GJR-GARCH
-│  │  ├─ xgboost_model.py       # XGBoost с 10 признаками
-│  │  └─ mlp_model.py           # MLP Regressor на CPU
+│  │  ├─ naive_model.py        # наивная модель
+│  │  ├─ garch_model.py        # GJR-GARCH
+│  │  ├─ xgboost_model.py      # XGBoost с 10 признаками
+│  │  └─ mlp_model.py          # MLP Regressor на CPU
+│  │
 │  ├─ evaluation/
-│  │  └─ evaluate_regimes.py    # вычисление метрик по regime
+│  │  └─ evaluate_regimes.py   # вычисление метрик по regime
+│  │
 │  └─ utils/
-│     └─ logger.py              # логирование в JSON
-├─ run_experiment.py             # основной pipeline
+│     └─ logger.py             # логирование в JSON
+│
+├─ run_experiment.py           # основной pipeline
 ├─ requirements.txt
+│
 └─ results/
-   └─ tables/metrics.json       # лог метрик моделей
+   └─ tables/
+      └─ metrics.json          # лог метрик моделей
+```
+
 
 ---
 
